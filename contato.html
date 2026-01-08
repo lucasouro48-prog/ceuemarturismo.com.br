@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Contato • CÉU E MAR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family:Segoe UI, Arial, sans-serif;
+  background:#020617;
+  color:#e5e7eb;
+}
+
+header{
+  padding:15px 40px;
+  background:#020617;
+  display:flex;
+  justify-content:space-between;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin-left:20px;
+}
+
+.section{
+  padding:70px 40px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+.box{
+  background:#0f172a;
+  padding:35px;
+  border-radius:20px;
+}
+
+select{
+  width:100%;
+  padding:15px;
+  border-radius:10px;
+  background:#020617;
+  color:#fff;
+  border:none;
+  font-size:16px;
+}
+
+iframe{
+  width:100%;
+  height:380px;
+  border-radius:20px;
+  border:none;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  background:#020617;
+  color:#94a3b8;
+}
+
+@media(max-width:900px){
+  .section{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <strong style="color:#fbbf24;font-size:22px;">CÉU E MAR</strong>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="passeios.html">Passeios</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="reserva.html">Reserva</a>
+  </nav>
+</header>
+
+<section class="section">
+
+<div class="box">
+  <h2>Escolha o passeio</h2>
+
+  <select onchange="trocarMapa(this.value)">
+    <option value="">Selecione um passeio</option>
+    <option value="pipa">Complexo Pipa</option>
+    <option value="gostoso">São Miguel do Gostoso</option>
+    <option value="galinhos">Galinhos</option>
+    <option value="genipabu">Genipabu</option>
+    <option value="maracajau">Maracajaú</option>
+    <option value="cunhau">Barra do Cunhaú</option>
+  </select>
+
+  <p style="margin-top:20px;color:#cbd5f5;">
+    O mapa será atualizado automaticamente conforme o passeio escolhido.
+  </p>
+</div>
+
+<div class="box">
+  <h2>Localização do Passeio</h2>
+
+  <iframe id="mapa"
+    src="https://www.google.com/maps?q=Natal%20RN&output=embed">
+  </iframe>
+</div>
+
+</section>
+
+<footer>
+© 2026 VANTUR PRIME • Turismo Executivo
+</footer>
+
+<script>
+function trocarMapa(passeio){
+  let url="https://www.google.com/maps?q=Natal%20RN&output=embed";
+
+  if(passeio==="pipa")
+    url="https://www.google.com/maps?q=Pipa%20RN&output=embed";
+
+  if(passeio==="gostoso")
+    url="https://www.google.com/maps?q=São%20Miguel%20do%20Gostoso%20RN&output=embed";
+
+  if(passeio==="galinhos")
+    url="https://www.google.com/maps?q=Galinhos%20RN&output=embed";
+
+  if(passeio==="genipabu")
+    url="https://www.google.com/maps?q=Genipabu%20RN&output=embed";
+
+  if(passeio==="maracajau")
+    url="https://www.google.com/maps?q=Maracajaú%20RN&output=embed";
+
+  if(passeio==="cunhau")
+    url="https://www.google.com/maps?q=Barra%20do%20Cunhaú%20RN&output=embed";
+
+  document.getElementById("mapa").src=url;
+}
+</script>
+
+</body>
+</html>

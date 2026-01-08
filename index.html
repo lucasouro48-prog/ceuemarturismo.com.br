@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<title>CÉU E MAR • Turismo & Experiências</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+  --primary:#fbbf24;
+  --dark:#020617;
+  --dark2:#0f172a;
+  --text:#e5e7eb;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Segoe UI',Arial,sans-serif;
+  background:var(--dark);
+  color:var(--text);
+  padding-top:80px;
+}
+
+/* HEADER FIXO */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1000;
+  background:rgba(2,6,23,.95);
+  box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.header-container{
+  max-width:1200px;
+  margin:auto;
+  padding:15px 25px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* MARCA TEXTO */
+.brand{
+  font-size:26px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+.brand span:first-child{
+  color:#fff;
+}
+
+.brand span:last-child{
+  color:var(--primary);
+  margin-left:5px;
+}
+
+/* MENU */
+nav a{
+  color:#fff;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover{
+  color:var(--primary);
+}
+
+/* MENU MOBILE */
+.menu-toggle{
+  display:none;
+  font-size:28px;
+  color:#fff;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:
+    linear-gradient(to right, rgba(2,6,23,.85), rgba(2,6,23,.3)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+  background-size:cover;
+  background-attachment:fixed;
+  display:flex;
+  align-items:center;
+  padding:0 60px;
+}
+
+.hero-content{max-width:600px}
+
+.hero h1{
+  font-size:3.2rem;
+  color:#fff;
+}
+
+.hero h1 span{color:var(--primary)}
+
+.hero p{
+  margin:20px 0 35px;
+  line-height:1.7;
+}
+
+/* BOTÕES */
+.btn{
+  background:var(--primary);
+  color:#020617;
+  padding:14px 32px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-right:15px;
+}
+
+.btn-outline{
+  border:2px solid var(--primary);
+  color:var(--primary);
+  padding:12px 30px;
+  border-radius:10px;
+  text-decoration:none;
+}
+
+/* SEÇÕES */
+.section{padding:90px 60px}
+
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.about img{
+  width:100%;
+  border-radius:20px;
+}
+
+/* FEATURES */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.feature{
+  background:var(--dark2);
+  padding:30px;
+  border-radius:18px;
+  text-align:center;
+}
+
+.feature i{
+  font-size:32px;
+  color:var(--primary);
+  margin-bottom:15px;
+}
+
+/* CTA */
+.cta{
+  background:
+    linear-gradient(to right, rgba(2,6,23,.9), rgba(2,6,23,.9)),
+    url("https://images.unsplash.com/photo-1493558103817-58b2924bce98");
+  background-size:cover;
+  background-attachment:fixed;
+  text-align:center;
+  padding:90px 40px;
+}
+
+/* BOTÕES FLUTUANTES */
+.float{
+  position:fixed;
+  right:20px;
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:26px;
+  z-index:999;
+}
+
+.whatsapp{bottom:90px;background:#25d366}
+.phone{bottom:20px;background:#2563eb}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  color:#94a3b8;
+}
+
+/* RESPONSIVO */
+@media(max-width:900px){
+  .hero{padding:0 25px}
+  .hero h1{font-size:2.3rem}
+  .about{grid-template-columns:1fr}
+}
+
+@media(max-width:768px){
+  nav{
+    position:absolute;
+    top:80px;
+    right:0;
+    background:#020617;
+    width:100%;
+    display:none;
+    flex-direction:column;
+    text-align:center;
+  }
+
+  nav a{
+    padding:18px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+
+  nav.active{display:flex}
+  .menu-toggle{display:block}
+}
+</style>
+</head>
+
+<body>
+
+<!-- BOTÕES FLUTUANTES -->
+<a href="https://wa.me/5584999999999" class="float whatsapp"><i class="fab fa-whatsapp"></i></a>
+<a href="tel:+5584999999999" class="float phone"><i class="fas fa-phone"></i></a>
+
+<header>
+  <div class="header-container">
+    <div class="brand">
+      <span>CÉU E</span><span>MAR</span>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+      <a href="index.html">Início</a>
+      <a href="passeios.html">Passeios</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="reserva.html">Reservas</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Experiências <span>Premium</span> sobre rodas</h1>
+    <p>
+      A Mar e Céu Turismo transforma cada viagem em uma experiência inesquecível,
+      conectando você aos destinos mais encantadores com conforto, segurança e excelência.
+    </p>
+    <a href="passeios.html" class="btn">Ver Passeios</a>
+    <a href="contato.html" class="btn-outline">Reservar Agora</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="about">
+    <div>
+      <h2>Sobre a Mar e Céu Turismo</h2>
+      <p>Especialistas em passeios executivos e experiências exclusivas.</p>
+
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-van-shuttle"></i>
+          <h3>Transporte Executivo</h3>
+        </div>
+        <div class="feature">
+          <i class="fas fa-route"></i>
+          <h3>Rotas Premium</h3>
+        </div>
+        <div class="feature">
+          <i class="fas fa-star"></i>
+          <h3>Atendimento VIP</h3>
+        </div>
+      </div>
+    </div>
+
+    <img src="ChatGPT Image 8 de jan. de 2026, 09_37_35.png">
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Viaje com conforto e exclusividade</h2>
+  <P> 
+
+  
+  </P>
+  <a href="https://wa.me/5584999999999" class="btn">Falar no WhatsApp</a>
+</section>
+
+<footer>
+© 2026CÉU E MAR Turismo • Todos os direitos reservados
+</footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
