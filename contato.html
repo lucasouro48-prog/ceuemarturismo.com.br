@@ -18,6 +18,7 @@ header{
   background:#020617;
   display:flex;
   justify-content:space-between;
+  align-items:center;
 }
 
 nav a{
@@ -88,12 +89,18 @@ footer{
 
   <select onchange="trocarMapa(this.value)">
     <option value="">Selecione um passeio</option>
+
     <option value="pipa">Complexo Pipa</option>
     <option value="gostoso">São Miguel do Gostoso</option>
     <option value="galinhos">Galinhos</option>
-    <option value="genipabu">Genipabu</option>
-    <option value="maracajau">Maracajaú</option>
+    <option value="genipabu">Dunas de Genipabu</option>
+    <option value="maracajau">Maracajaú — Parrachos</option>
     <option value="cunhau">Barra do Cunhaú</option>
+
+    <option value="joaopessoa">João Pessoa — City Tour + Praia</option>
+    <option value="lagoas">Lagoas do Litoral Sul</option>
+    <option value="quadriciclo">Passeio de Quadriciclo</option>
+    <option value="transfer">Transfer In / Out</option>
   </select>
 
   <p style="margin-top:20px;color:#cbd5f5;">
@@ -117,7 +124,7 @@ footer{
 
 <script>
 function trocarMapa(passeio){
-  let url="https://www.google.com/maps?q=Natal%20RN&output=embed";
+  let url = "https://www.google.com/maps?q=Natal%20RN&output=embed";
 
   if(passeio==="pipa")
     url="https://www.google.com/maps?q=Pipa%20RN&output=embed";
@@ -137,10 +144,21 @@ function trocarMapa(passeio){
   if(passeio==="cunhau")
     url="https://www.google.com/maps?q=Barra%20do%20Cunhaú%20RN&output=embed";
 
-  document.getElementById("mapa").src=url;
+  if(passeio==="joaopessoa")
+    url="https://www.google.com/maps?q=João%20Pessoa%20PB&output=embed";
+
+  if(passeio==="lagoas")
+    url="https://www.google.com/maps?q=Lagoa%20de%20Arituba%20RN&output=embed";
+
+  if(passeio==="quadriciclo")
+    url="https://www.google.com/maps?q=Dunas%20de%20Natal%20RN&output=embed";
+
+  if(passeio==="transfer")
+    url="https://www.google.com/maps?q=Aeroporto%20de%20Natal%20RN&output=embed";
+
+  document.getElementById("mapa").src = url;
 }
 </script>
 
 </body>
 </html>
-
