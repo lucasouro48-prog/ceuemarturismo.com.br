@@ -2,8 +2,24 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Passeios • CÉU E MAR</title>
+
+<title>Passeios no RN | Céu e Mar Turismo • Experiências Premium</title>
+
+<meta name="description" content="Passeios exclusivos no Rio Grande do Norte com a Céu e Mar Turismo. Pipa, Genipabu, Maracajaú, Galinhos, São Miguel do Gostoso, transfers e muito mais.">
+<meta name="keywords" content="passeios no RN, turismo em Natal, Pipa RN, Genipabu, Maracajaú, Galinhos, passeios premium, turismo executivo">
+<meta name="author" content="Céu e Mar Turismo">
+<meta name="robots" content="index, follow">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="canonical" href="https://ceuemarturismo.com.br/passeios.html">
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Passeios no RN • Céu e Mar Turismo">
+<meta property="og:description" content="Experiências premium no Rio Grande do Norte com conforto e segurança.">
+<meta property="og:url" content="https://ceuemarturismo.com.br/passeios.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -14,71 +30,39 @@
   --dark2:#0f172a;
   --text:#e5e7eb;
 }
-
 body{
   margin:0;
   font-family:Segoe UI, Arial, sans-serif;
   background:var(--dark);
   color:var(--text);
 }
-
-/* MENU */
 header{
   position:sticky;
   top:0;
-  z-index:1000;
   background:#020617;
   padding:15px 30px;
   display:flex;
   justify-content:space-between;
   align-items:center;
+  z-index:1000;
 }
-
-.brand{
-  font-size:22px;
-  font-weight:800;
-  color:var(--primary);
-}
-
-nav{
-  display:flex;
-  gap:25px;
-}
-
-nav a{
-  color:#fff;
-  text-decoration:none;
-  font-weight:500;
-}
+.brand{font-size:22px;font-weight:800;color:var(--primary);}
+nav{display:flex;gap:25px;}
+nav a{color:#fff;text-decoration:none;}
 nav a:hover{color:var(--primary);}
+.menu-toggle{display:none;flex-direction:column;cursor:pointer;}
+.menu-toggle span{width:26px;height:3px;background:#fff;margin:4px 0;}
 
-.menu-toggle{
-  display:none;
-  flex-direction:column;
-  cursor:pointer;
-}
-.menu-toggle span{
-  width:26px;
-  height:3px;
-  background:#fff;
-  margin:4px 0;
-}
-
-/* HERO */
 .hero{
-  background:
-    linear-gradient(to right, rgba(2,6,23,.85), rgba(2,6,23,.4)),
-    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+  background:linear-gradient(to right, rgba(2,6,23,.85), rgba(2,6,23,.4)),
+  url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
   background-size:cover;
-  background-attachment:fixed;
   padding:100px 40px;
 }
 .hero h1{font-size:3rem;color:#fff;}
 .hero p{max-width:650px;color:#cbd5f5;font-size:1.1rem;}
 
-/* PASSEIOS */
 .section{padding:70px 40px;}
-
 .tour{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -87,23 +71,12 @@ nav a:hover{color:var(--primary);}
   background:var(--dark2);
   border-radius:22px;
   padding:35px;
-  border:1px solid rgba(255,255,255,.05);
 }
-
-.tour img{
-  width:100%;
-  border-radius:18px;
-}
-
+.tour img{width:100%;border-radius:18px;}
 .tour h2{margin-top:0;color:#fff;}
 .tour p{color:#cbd5f5;}
-
-.tour ul{
-  padding-left:20px;
-  margin:20px 0;
-}
+.tour ul{padding-left:20px;}
 .tour ul li{margin-bottom:8px;}
-
 .btn{
   background:var(--primary);
   color:#020617;
@@ -111,10 +84,8 @@ nav a:hover{color:var(--primary);}
   border-radius:10px;
   text-decoration:none;
   font-weight:bold;
-  display:inline-block;
 }
 
-/* FLOAT */
 .float{
   position:fixed;
   right:20px;
@@ -126,7 +97,6 @@ nav a:hover{color:var(--primary);}
   justify-content:center;
   color:#fff;
   font-size:26px;
-  text-decoration:none;
   z-index:999;
 }
 .whatsapp{bottom:90px;background:#25d366;}
@@ -139,7 +109,6 @@ footer{
   color:#94a3b8;
 }
 
-/* MOBILE */
 @media(max-width:900px){
   .menu-toggle{display:flex;}
   nav{
@@ -151,28 +120,21 @@ footer{
     flex-direction:column;
     align-items:center;
     display:none;
-    padding:20px 0;
   }
   nav.active{display:flex;}
-  nav a{padding:12px 0;font-size:18px;}
   .tour{grid-template-columns:1fr;}
-  .hero h1{font-size:2.2rem;}
 }
 </style>
 </head>
 
 <body>
 
-<a href="https://wa.me/55 84 9619-4981" class="float whatsapp"><i class="fab fa-whatsapp"></i></a>
-<a href="tel:55 84 9619-4981" class="float phone"><i class="fas fa-phone"></i></a>
+<a href="https://wa.me/5584999638395" class="float whatsapp"><i class="fab fa-whatsapp"></i></a>
+<a href="tel:+5584999638395" class="float phone"><i class="fas fa-phone"></i></a>
 
 <header>
   <div class="brand">CÉU E MAR</div>
-
-  <div class="menu-toggle" id="menuToggle">
-    <span></span><span></span><span></span>
-  </div>
-
+  <div class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
   <nav id="menu">
     <a href="index.html">Início</a>
     <a href="passeios.html">Passeios</a>
@@ -182,61 +144,87 @@ footer{
 </header>
 
 <section class="hero">
-  <h1>Passeios Exclusivos</h1>
-  <p>Os mesmos destinos da nossa galeria, com conforto, segurança e experiência premium.</p>
+  <h1>Passeios Exclusivos no RN</h1>
+  <p>Os destinos mais desejados do Rio Grande do Norte com conforto e experiência premium.</p>
 </section>
 
 <section class="section">
-  <!-- RIO DO FOGO -->
+
+<!-- RIO DO FOGO -->
 <div class="tour">
-  <img src="WhatsApp Image 2025-12-26 at 12.15.06.jpeg">
-  <div>
-    <h2>Rio do Fogo — Parrachos</h2>
-    <p>
-      Conheça os famosos <strong>Parrachos de Rio do Fogo</strong>, com águas cristalinas,
-      piscinas naturais e um dos melhores pontos para mergulho do Rio Grande do Norte.
-      Ideal para famílias e amantes do mar.
-    </p>
-    <ul>
-      <li>✔ Piscinas naturais</li>
-      <li>✔ Mergulho com snorkel</li>
-      <li>✔ Catamarã ou lancha</li>
-    </ul>
-    <a class="btn" href="https://wa.me/55 84 9619-4981?text=Quero reservar Rio do Fogo — Parrachos">
-      Reservar
-    </a>
-  </div>
+<img src="WhatsApp Image 2025-12-26 at 12.15.06.jpeg">
+<div>
+<h2>Rio do Fogo — Parrachos</h2>
+<p>Piscinas naturais cristalinas ideais para mergulho.</p>
+<ul>
+<li>✔ Snorkel</li><li>✔ Catamarã</li><li>✔ Transporte executivo</li>
+</ul>
+<a class="btn" href="https://wa.me/5584999638395?text=Quero reservar Rio do Fogo">Reservar</a>
+</div>
 </div>
 
-<!-- SÃO MIGUEL DO GOSTOSO -->
+<!-- SÃO MIGUEL -->
 <div class="tour">
 <img src="https://www.mundoviajante.com/wp-content/uploads/2024/01/praias_sao_miguel_do_gostoso.jpeg">
 <div>
 <h2>São Miguel do Gostoso</h2>
-<p>Praias paradisíacas, vila charmosa e clima perfeito para relaxar.</p>
+<p>Praias tranquilas, vila charmosa e pôr do sol incrível.</p>
 <ul>
-<li>✔ Centro da vila</li>
-<li>✔ Praia de Tourinhos</li>
-<li>✔ Transporte executivo</li>
+<li>✔ Tourinhos</li><li>✔ Centro</li><li>✔ Transporte executivo</li>
 </ul>
-<a class="btn" href="https://wa.me/55 84 9619-4981?text=Quero reservar São Miguel do Gostoso">Reservar</a>
+<a class="btn" href="https://wa.me/5584999638395?text=Quero reservar São Miguel do Gostoso">Reservar</a>
 </div>
 </div>
 
+<!-- JOÃO PESSOA -->
+<div class="tour">
+<img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/06/joao-pessoa-praias.jpg">
+<div>
+<h2>João Pessoa — City Tour</h2>
+<p>Capital mais oriental das Américas.</p>
+<ul>
+<li>✔ Centro histórico</li><li>✔ Farol do Cabo Branco</li>
+</ul>
+<a class="btn" href="https://wa.me/5584999638395?text=Quero reservar João Pessoa">Reservar</a>
+</div>
+</div>
 
+<!-- LAGOAS -->
+<div class="tour">
+<img src="https://www.natalpraias.com.br/wp-content/uploads/2016/01/Lagoa-de-Arituba.jpg">
+<div>
+<h2>Lagoas do Litoral Sul</h2>
+<p>Lagoa de Arituba e Alcaçuz.</p>
+<ul>
+<li>✔ Banho</li><li>✔ Estrutura completa</li>
+</ul>
+<a class="btn" href="https://wa.me/5584999638395?text=Quero reservar Lagoas do Litoral Sul">Reservar</a>
+</div>
+</div>
+
+<!-- QUADRICICLO -->
+<div class="tour">
+<img src="https://www.passeiosnatal.com.br/wp-content/uploads/2022/08/passeio-quadriciclo-natal.jpg">
+<div>
+<h2>Passeio de Quadriciclo</h2>
+<p>Aventura nas dunas e trilhas.</p>
+<ul>
+<li>✔ Instrutor</li><li>✔ Equipamentos</li>
+</ul>
+<a class="btn" href="https://wa.me/5584999638395?text=Quero reservar Quadriciclo">Reservar</a>
+</div>
+</div>
 
 <!-- PIPA -->
 <div class="tour">
 <img src="https://tse2.mm.bing.net/th/id/OIP.qEd3c0-DQ1rb1r8-smwHcQHaEK">
 <div>
 <h2>Complexo Pipa</h2>
-<p>Falésias, mirantes, praias e o charme da vila.</p>
+<p>Falésias, mirantes e centro turístico.</p>
 <ul>
-<li>✔ Praia do Amor</li>
-<li>✔ Chapadão</li>
-<li>✔ Centro de Pipa</li>
+<li>✔ Praia do Amor</li><li>✔ Chapadão</li>
 </ul>
-<a class="btn" href="https://wa.me/55 84 9619-4981?text=Quero reservar Complexo Pipa">Reservar</a>
+<a class="btn" href="https://wa.me/5584999638395?text=Quero reservar Pipa">Reservar</a>
 </div>
 </div>
 
@@ -245,13 +233,11 @@ footer{
 <img src="https://www.natalpraias.com.br/wp-content/uploads/2015/09/Galinhos-RN-BRASIL.jpg">
 <div>
 <h2>Galinhos</h2>
-<p>Vila rústica com dunas, salinas e passeio de barco.</p>
+<p>Dunas, salinas e passeio de barco.</p>
 <ul>
-<li>✔ Passeio de barco</li>
-<li>✔ Dunas</li>
-<li>✔ Transporte executivo</li>
+<li>✔ Barco</li><li>✔ Dunas</li>
 </ul>
-<a class="btn" href="https://wa.me/55 84 9619-4981?text=Quero reservar Galinhos">Reservar</a>
+<a class="btn" href="https://wa.me/5584999638395?text=Quero reservar Galinhos">Reservar</a>
 </div>
 </div>
 
@@ -260,13 +246,11 @@ footer{
 <img src="https://cache.quantocustaviajar.com/blog/wp-content/uploads/2018/12/dunas-de-genipabu-1.jpg">
 <div>
 <h2>Buggy em Genipabu</h2>
-<p>Dunas, lagoas e muita emoção.</p>
+<p>Dunas e lagoas com emoção.</p>
 <ul>
-<li>✔ Buggy até 4 pessoas</li>
-<li>✔ Lagoas</li>
-<li>✔ Guia motorista</li>
+<li>✔ Buggy</li><li>✔ Lagoas</li>
 </ul>
-<a class="btn" href="https://wa.me/55 84 9619-4981?text=Quero reservar Buggy em Genipabu">Reservar</a>
+<a class="btn" href="https://wa.me/5584999638395?text=Quero reservar Genipabu">Reservar</a>
 </div>
 </div>
 
@@ -275,13 +259,11 @@ footer{
 <img src="https://tse3.mm.bing.net/th/id/OIP.9K0eO2bfx2CUmix-8lLfgAHaEq">
 <div>
 <h2>Maracajaú — Parrachos</h2>
-<p>Piscinas naturais e mergulho com snorkel.</p>
+<p>Snorkel e piscinas naturais.</p>
 <ul>
-<li>✔ Catamarã</li>
-<li>✔ Snorkel</li>
-<li>✔ Transporte executivo</li>
+<li>✔ Catamarã</li><li>✔ Snorkel</li>
 </ul>
-<a class="btn" href="https://wa.me/55 84 9619-4981?text=Quero reservar Maracajaú">Reservar</a>
+<a class="btn" href="https://wa.me/5584999638395?text=Quero reservar Maracajaú">Reservar</a>
 </div>
 </div>
 
@@ -290,103 +272,31 @@ footer{
 <img src="https://emalgumlugardomundo.com.br/wp-content/uploads/2022/11/barra-do-cunhau-natal-8.jpg">
 <div>
 <h2>Barra do Cunhaú</h2>
-<p>Rio, mar e manguezais em um só lugar.</p>
+<p>Rio e mar em perfeita harmonia.</p>
 <ul>
 <li>✔ Passeio ecológico</li>
-<li>✔ Praia tranquila</li>
-<li>✔ Transporte executivo</li>
 </ul>
-<a class="btn" href="https://wa.me/55 84 9619-4981?text=Quero reservar Barra do Cunhaú">Reservar</a>
+<a class="btn" href="https://wa.me/5584999638395?text=Quero reservar Barra do Cunhaú">Reservar</a>
 </div>
 </div>
-  
-  <!-- JOÃO PESSOA -->
+
+<!-- TRANSFER -->
 <div class="tour">
-  <img src="https://tse3.mm.bing.net/th/id/OIP.x-WbH1CV1n4ddMsesm8XVQHaE3?rs=1&pid=ImgDetMain&o=7&rm=3">
-  <div>
-    <h2>João Pessoa — City Tour + Por do Sol</h2>
-    <p>
-      Conheça a capital paraibana, suas praias urbanas, pontos históricos
-      e o famoso ponto mais oriental das Américas.
-    </p>
-    <ul>
-      <li>✔ Centro histórico</li>
-      <li>✔ Farol do Cabo Branco</li>
-      <li>✔ Praias urbanas</li>
-    </ul>
-    <a class="btn" href="https://wa.me/55 84 9619-4981?text=Quero reservar João Pessoa City Tour com Praia">
-      Reservar
-    </a>
-  </div>
+<img src="https://www.braziltours.com.br/wp-content/uploads/2019/02/transfer-aeroporto.jpg">
+<div>
+<h2>Transfer In / Out</h2>
+<p>Traslado executivo aeroporto ⇄ hotel.</p>
+<ul>
+<li>✔ Veículos climatizados</li><li>✔ Pontualidade</li>
+</ul>
+<a class="btn" href="https://wa.me/5584999638395?text=Quero reservar Transfer">Reservar</a>
 </div>
-
-  <!-- LAGOAS DO LITORAL SUL -->
-<div class="tour">
-  <img src="https://natalviagens.com/wp-content/uploads/2020/09/passeio-lagoa-de-arituba.jpg">
-  <div>
-    <h2>Lagoas do Litoral Sul</h2>
-    <p>
-      Um passeio relaxante pelas lagoas mais famosas do litoral sul do RN,
-      com águas calmas e estrutura para toda a família.
-    </p>
-    <ul>
-      <li>✔ Lagoa de Arituba</li>
-      <li>✔ Lagoa de Alcaçuz</li>
-      <li>✔ Tempo livre para banho</li>
-    </ul>
-    <a class="btn" href="https://wa.me/55 84 9619-4981?text=Quero reservar Lagoas do Litoral Sul">
-      Reservar
-    </a>
-  </div>
 </div>
-
-  <!-- QUADRICICLO -->
-<div class="tour">
-  <img src="https://tse1.mm.bing.net/th/id/OIP.eeg2Z7I70YduonGoplMYKgHaFj?rs=1&pid=ImgDetMain&o=7&rm=3">
-  <div>
-    <h2>Passeio de Quadriciclo</h2>
-    <p>
-      Aventura pelas dunas, trilhas e praias, com emoção e paisagens incríveis.
-      Ideal para quem busca adrenalina.
-    </p>
-    <ul>
-      <li>✔ Dunas e trilhas</li>
-      <li>✔ Instrutor incluso</li>
-      <li>✔ Equipamentos de segurança</li>
-    </ul>
-    <a class="btn" href="https://wa.me/55 84 9619-4981?text=Quero reservar Passeio de Quadriciclo">
-      Reservar
-    </a>
-  </div>
-</div>
-
-  <!-- TRANSFER IN OUT -->
-<div class="tour">
-  <img src="https://tse1.mm.bing.net/th/id/OIP.lGH-2XOm9BdEI_KJ-YSuagHaEK?rs=1&pid=ImgDetMain&o=7&rm=3">
-  <div>
-    <h2>Transfer In / Out</h2>
-    <p>
-      Traslado executivo com conforto, pontualidade e segurança
-      entre aeroporto, hotéis e destinos turísticos.
-    </p>
-    <ul>
-      <li>✔ Aeroporto ⇄ Hotel</li>
-      <li>✔ Veículos climatizados</li>
-      <li>✔ Motorista profissional</li>
-    </ul>
-    <a class="btn" href="https://wa.me/55 84 9619-4981?text=Quero reservar Transfer In/Out">
-      Reservar
-    </a>
-  </div>
-</div>
-
-  
-
 
 </section>
 
 <footer>
-© 2026 CÉU E MAR • Turismo Executivo
+© 2026 CÉU E MAR • Turismo Executivo no RN
 </footer>
 
 <script>
@@ -397,7 +307,3 @@ toggle.onclick=()=>menu.classList.toggle("active");
 
 </body>
 </html>
-
-
-
-
